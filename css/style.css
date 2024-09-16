@@ -32,12 +32,16 @@ body{
     width: 100%;
 }
 
-.col-1{
-    width: calc((100% / 12) *1);
+.col-2{
+    width: calc((100% / 12) *2);
 }
 
 img{
     max-width: 100%;
+}
+
+section{
+    padding: 2rem 0;
 }
 
 /* #endregion utilities */
@@ -90,7 +94,7 @@ main{
 
     .description{
         color: var(--zaff-description);
-        padding: 2rem 0;
+        padding-bottom: 1rem;
         font-size: 15px;
     }
 
@@ -135,16 +139,14 @@ main{
 /* #region socials */
 
 #socials{
-    padding: 2rem 0;
 
     img{
         width: 24px;
         vertical-align: text-bottom;
     }
 
-    .col-1 div{
+    .btn{
         width: 40px;
-        /* height: 30px; */
         padding: 10px;
         background-color: white;
         border-radius: 50%;
@@ -157,18 +159,13 @@ main{
 
 /* #region adv */
 
-@media screen and (max-width: 767px){
-    .adv-none{
-        display: none;
-    }
-}
+
 
 /* #endregion adv */
 
 /* #region presentation */
 
 #presentation{
-    padding: 2rem 0;
 
     img{
         width: 50%;
@@ -191,13 +188,6 @@ main{
     }
 }
 
-@media screen and (min-width: 577px) {
-    #presentation img{
-        float: left;
-        margin: 1rem;
-    }
-    
-}
 
 /* #endregion presentation */
 
@@ -231,3 +221,66 @@ footer{
 }
 
 /* #endregion footer */
+
+/* #region media query */
+
+@media screen and (min-width: 577px) {
+    #presentation img{
+        float: left;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .adv-none, .h2-none{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .container-sm{
+        width: 75%;
+    }
+    header{
+        .title-header{
+            text-align: left;
+            padding-left: 1.5rem;
+            font-size: 50px;
+        }
+    }
+
+    #video-card{
+        .card-d-flex{
+            display: flex;
+            flex-wrap: wrap;
+            div{
+                padding: 2rem 1rem;
+            }
+        }
+    
+        .col-4{
+            width: calc((100% / 12) *4);
+        }
+    
+        .col-8{
+            width: calc((100% / 12) *8);
+        }
+
+    }
+
+    #socials{
+        .btn-lg{
+            width: 110px;
+            padding: 5px 45px;
+            background-color: white;
+            border-radius: 2rem;
+            text-align: center;
+            box-shadow: 5px 5px 10px 5px lightgray;
+            justify-content: space-between;
+        }
+    }
+}
+
+/* #endregion media query */

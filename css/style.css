@@ -240,8 +240,9 @@ footer{
 
 @media screen and (min-width: 768px) {
 
-    .container-sm{
+    .container-s{
         width: 75%;
+        margin: auto;
     }
     header{
         .title-header{
@@ -281,6 +282,92 @@ footer{
             justify-content: space-between;
         }
     }
+}
+
+@media screen and (min-width: 992px) {
+    .container-xs{
+        width: 70%;
+        margin: auto;
+    }
+
+    #description{
+        .title-main-lg{
+            font-size: 40px;
+        }
+    }
+
+    #video-card{
+        .col-8-lg{
+            width: calc((100% / 12) *8);
+            img{
+                height: 300px;
+            }
+        }
+        .col-4-lg{
+            width: calc((100% / 12) *4);
+            height: 300px;
+        }
+        .col-12-lg{
+            width: 100%;
+            padding: 0.5rem 1rem;
+        }
+        .card-d-flex{
+            div{
+                padding: 0;
+                font-size: 15px;
+            }
+        }
+    }
+
+    #socials{
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .row{
+            justify-content: space-between;
+        }
+        .btn-xlg{
+            width: 145px;
+            padding: 5px;
+            background-color: white;
+            border-radius: 2rem;
+            text-align: center;
+            box-shadow: 5px 5px 10px 5px lightgray;
+            justify-content: space-around;
+        }
+    }
+
+    footer{
+        font-size: 15px;
+        .col-6{
+            width: 50%;
+        }
+        .left{
+            justify-content: flex-start;
+            padding-left: 2rem;
+            
+        }
+        .copyright, .address{
+            text-align: left;
+        }
+        .right{
+            flex-wrap: nowrap;
+            align-items: center;
+            a{
+                padding: 0;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 991px){
+    #socials{
+        .btn-lg span{
+            display: none;
+        }
+}
 }
 
 /* #endregion media query */

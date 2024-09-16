@@ -74,13 +74,12 @@ main{
 
     .description{
         color: var(--zaff-description);
-        padding: 2rem 1rem;
+        padding: 2rem 0;
         font-size: 15px;
     }
 
     .title-main{
         color: var(--zaff-dessert);
-        padding-left: 1rem;
         padding-bottom: 2rem;
         font-size: 30px;
     }

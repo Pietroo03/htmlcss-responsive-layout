@@ -9,6 +9,7 @@
     --zaff-background: #f6f5f3;
     --zaff-dessert: #4e3969;
     --zaff-footer: #7c69a4;
+    --zaff-description: #b3b3b2;
 }
 
 body{
@@ -55,8 +56,36 @@ header{
 
     .title-header{
         color: var(--zaff-title);
-        font-size: 70px;
+        font-size: 35px;
     }
 }
 
 /* #endregion header */
+
+/* #region main */
+
+main{
+    background-color: var(--zaff-background);
+}
+
+/* #region description */
+
+#description{
+
+    .description{
+        color: var(--zaff-description);
+        padding: 2rem 1rem;
+        font-size: 15px;
+    }
+
+    .title-main{
+        color: var(--zaff-dessert);
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+        font-size: 30px;
+    }
+}
+
+/* #endregion description */
+
+/* #endregion main */

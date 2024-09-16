@@ -56,6 +56,11 @@ img{
     flex-wrap: wrap;
 }
 
+.justify-content{
+    justify-content: center;
+
+}
+
 /* #endregion flex */
 
 /* #region header */
@@ -153,12 +158,48 @@ main{
 
 /* #region adv */
 
-#adv{
+@media screen and (max-width: 767px){
     .adv-none{
         display: none;
     }
 }
 
 /* #endregion adv */
+
+/* #region presentation */
+
+#presentation{
+    padding: 2rem 0;
+
+    img{
+        width: 50%;
+        margin: 3% 25%;
+        box-shadow: 5px 5px 10px 5px lightgray;
+    }
+
+    hr{
+        border: 1px solid var(--zaff-title);
+        margin-right: 89%;
+    }
+
+    p{
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+
+    span{
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 577px) {
+    #presentation img{
+        float: left;
+        margin: 1rem;
+    }
+    
+}
+
+/* #endregion presentation */
 
 /* #endregion main */

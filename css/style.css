@@ -32,6 +32,10 @@ body{
     width: 100%;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* #endregion utilities */
 
 /* #region flex */
@@ -42,6 +46,10 @@ body{
 
 .space-evenly{
     justify-content: space-evenly;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
 }
 
 /* #endregion flex */
@@ -86,5 +94,24 @@ main{
 }
 
 /* #endregion description */
+
+/* #region video-card */
+
+#video-card{
+
+    .card{
+        background-color: white;
+    }
+
+    span{
+        vertical-align: super;
+    }
+
+    .portions img{
+        width: 25px;
+    }
+}
+
+/* #endregion video-card */
 
 /* #endregion main */

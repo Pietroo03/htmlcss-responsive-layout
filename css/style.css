@@ -44,3 +44,19 @@ body{
 }
 
 /* #endregion flex */
+
+/* #region header */
+
+header{
+    font-family: "Nerko One", cursive;
+    background-color: white;
+    text-align: center;
+    padding: 1rem 0;
+
+    .title-header{
+        color: var(--zaff-title);
+        font-size: 70px;
+    }
+}
+
+/* #endregion header */

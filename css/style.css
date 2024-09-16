@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --zaff-title: #ff9614;
+    --zaff-background: #f6f5f3;
+    --zaff-dessert: #4e3969;
+    --zaff-footer: #7c69a4;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+/* #region utilities */
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.row{
+    margin: 0 -1rem;
+    display: flex;
+}
+
+.col-12{
+    width: 100%;
+}
+
+/* #endregion utilities */
+
+/* #region flex */
+
+.d-flex{
+    display: flex;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+/* #endregion flex */

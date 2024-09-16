@@ -151,4 +151,14 @@ main{
 
 /* #endregion socials */
 
+/* #region adv */
+
+#adv{
+    .adv-none{
+        display: none;
+    }
+}
+
+/* #endregion adv */
+
 /* #endregion main */

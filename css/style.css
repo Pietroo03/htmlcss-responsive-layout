@@ -56,9 +56,8 @@ img{
     flex-wrap: wrap;
 }
 
-.justify-content{
-    justify-content: center;
-
+.space-around{
+    justify-content: space-around;
 }
 
 /* #endregion flex */
@@ -203,3 +202,32 @@ main{
 /* #endregion presentation */
 
 /* #endregion main */
+
+/* #region footer */
+
+footer{
+    background-color: var(--zaff-footer);
+    color: white;
+    font-size: 18px;
+
+    .copyright, .address{
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .copyright{
+        font-weight: bold;
+        padding-top: 2rem;
+    }
+
+    .link{
+        padding: 2rem;
+
+        a{
+            padding: 0.5rem;
+            color: white;
+        }
+    }
+}
+
+/* #endregion footer */

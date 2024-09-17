@@ -24,7 +24,6 @@ body{
 }
 
 .row{
-    margin: 0 -1rem;
     display: flex;
 }
 
@@ -62,6 +61,10 @@ section{
 
 .space-around{
     justify-content: space-around;
+}
+
+.space-between{
+    justify-content: space-between;
 }
 
 /* #endregion flex */
@@ -140,6 +143,11 @@ main{
 
 #socials{
 
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
     img{
         width: 24px;
         vertical-align: text-bottom;
@@ -195,7 +203,7 @@ main{
 
 /* #region footer */
 
-footer{
+#app-footer{
     background-color: var(--zaff-footer);
     color: white;
     font-size: 18px;
@@ -338,9 +346,10 @@ footer{
         }
     }
 
-    footer{
+    #app-footer{
         font-size: 15px;
-        .col-6{
+        
+        .col-6-xlg{
             width: 50%;
         }
         .left{

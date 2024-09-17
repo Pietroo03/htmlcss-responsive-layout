@@ -208,8 +208,11 @@ main{
     color: white;
     font-size: 18px;
 
-    .copyright, .address{
+    .right, .left{
         text-align: center;
+    }
+
+    .copyright, .address{
         padding-bottom: 1rem;
     }
 
@@ -348,6 +351,7 @@ main{
 
     #app-footer{
         font-size: 15px;
+        display: flex;
         
         .col-6-xlg{
             width: 50%;
@@ -361,6 +365,7 @@ main{
             text-align: left;
         }
         .right{
+            justify-content: flex-end;
             flex-wrap: nowrap;
             align-items: center;
             a{
